@@ -9,7 +9,7 @@ Claude Sonnet 4製
 goがインストールされている環境で以下のコマンドを実行してください。
 
 ```bash
-git clone https://github.com/yourusername/money.git
+git clone git@github.com:kusana-ctl/money.git
 cd money
 go run main.go
 ``` 
