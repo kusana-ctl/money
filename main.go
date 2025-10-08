@@ -266,6 +266,7 @@ func filterGrowthArticles(articles []Article) []Article {
 		"好調",
 		"上方修正",
 		"増加",
+		"黒字転換",
 	}
 
 	for _, article := range articles {
@@ -334,11 +335,6 @@ func displayArticles(articles []Article) {
 			fmt.Println()
 		} else if article.Date != "" {
 			fmt.Printf("   日付: %s\n", article.Date)
-		}
-
-		// Try to get more details from the article
-		if articleDetails := getArticleDetails(article.URL); articleDetails != "" {
-			fmt.Printf("   詳細: %s\n", articleDetails)
 		}
 
 		fmt.Println()
